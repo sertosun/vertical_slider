@@ -1,0 +1,114 @@
+@import url("https://fonts.googleapis.com/css2?family=Bangers&family=Kumbh+Sans:wght@400;700&family=Open+Sans&family=Overpass:wght@400;700&family=Poppins:wght@300;400;700&family=Press+Start+2P&family=Roboto:wght@300;400;700&display=swap");
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  height: 100vh;
+}
+
+.berlin {
+  background-color: aqua;
+  color: rgb(12, 133, 133);
+}
+
+.london {
+  background-color: yellow;
+  color: rgb(158, 163, 11);
+}
+
+.ankara {
+  background-color: red;
+  color: rgb(123, 12, 12);
+}
+
+.moskau {
+  background-color: rgb(25, 0, 255);
+  color: rgb(20, 24, 123);
+}
+
+.slider_container {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.text_slide {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 35%;
+  height: 100%;
+  transition: all 500ms;
+}
+
+.text_slide .content {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.image_slide {
+  position: absolute;
+  top: 0;
+  left: 35%;
+  width: 65%;
+  height: 100%;
+  transition: all 500ms;
+}
+
+.back_img {
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 100%;
+  width: 100%;
+}
+
+.moskau_img {
+  background-image: url("moskau.jpg");
+}
+
+.ankara_img {
+  background-image: url("ankara.jpg");
+}
+
+.london_img {
+  background-image: url("london.jpg");
+}
+
+.berlin_img {
+  background-image: url("berlin.jpg");
+}
+
+button {
+  padding: 1rem;
+  font-size: 1rem;
+  border: none;
+  background-color: white;
+  color: black;
+}
+
+.button_container button {
+  position: absolute;
+  left: 35%;
+  top: 50%;
+  cursor: pointer;
+}
+
+.down_button {
+  transform: translateX(-100%);
+}
+
+.up_button {
+  transform: translateY(-100%);
+}
